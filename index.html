@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Heading-->
+    <div class="audio-banner">
+        <div class="audio-titlediv">
+            <h1 style="color: white;">Audio Mixer</h1>
+        </div>
+    </div>
+    <!--Container-->
+    <div class="music-container">
+        <!--Music player 1-->
+        <div class="video-player-container">
+            <div class="video-player1"><h4>Drag and Drop an Audio File Below.</h4>
+                    <canvas class="canvas1 dropareach1">
+                    </canvas>   
+            </div>
+            <div class="controls">
+                <span class="material-icons-outlined material-icons channel1btn" style="display: none;">play_arrow</span>
+            </div>
+                <div class="grid">
+                    <div class="grid1">
+                        <label for="volume">Volume</label>
+                        <input type="range" min="0" max="1" value=".5" step=".01" id="volume">
+                        <label for="bass">Bass</label>
+                        <input type="range" min="-10" max="10" value="0" id="bass">
+                    </div>
+                    <div class="grid2">
+                        <label for="mid">Mid</label>
+                        <input type="range" min="-10" max="10" value="0" id="mid">
+                        <label for="treble">Treble</label>
+                        <input type="range" min="-10" max="10" value="0" id="treble">
+                    </div>
+                </div>
+        </div>
+        <!--Music player 2-->
+        <div class="video-player-container">
+            <div class="video-player2"><h4>Drag and Drop an Audio File Below.</h4>
+                <canvas class="canvas2 dropareach2"></canvas>   
+        </div>
+            <div class="controls">
+                <span class="material-icons-outlined material-icons channel2btn" style="display: none;">play_arrow</span>
+            </div>
+                <div class="grid">
+                    <div class="grid1">
+                        <label for="volume">Volume</label>
+                        <input type="range" min="0" max="1" value=".5" step=".01" class="volume">
+                        <label for="bass">Bass</label>
+                        <input type="range" min="-10" max="10" value="0" class="bass">
+                    </div>
+                    <div class="grid2">
+                        <label for="mid">Mid</label>
+                        <input type="range" min="-10" max="10" value="0" class="mid">
+                        <label for="treble">Treble</label>
+                        <input type="range" min="-10" max="10" value="0" class="treble">
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--Recording buttons-->
+    <div class="buttons">
+        <button class="recording"></button>
+    </div>
+    <!--Timer-->
+    <div class="timing">00:00:00</div>
+    <!--Recordings-->
+    <div class="recordings">
+        <span class="material-icons-outlined material-icons icon">
+            music_note
+        </span> 
+    </div>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <script src="recording.js"></script>
+    <script src="dbscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #6a6a6a;
+}
+.music-container{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-player-container{
+    height: 90%;
+    width: 36rem;
+    border-radius: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #3a3a3a;
+}
+.video-player1,.video-player2{
+    width: 80%;
+    height: 60%;
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    
+}
+.canvas1{
+    height: 100%;
+    width: 100%;
+    background-color: white
+}.canvas2{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.grid{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-around;
+}
+.recordings{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 5rem;
+    width: 5rem;
+    color: white;
+}
+.icon{
+    font-size: 3rem;
+}
+.audio-banner{
+    height: 5rem;
+    width: 100%;
+    background-color: #d91d1d;
+}
+
+
+.audio-titlediv{
+    margin: 0 auto;
+    height: 100%;
+    width: 11rem;
+    display: flex;
+}
+.buttons{
+    position: fixed;
+    right: 5vw;
+    top: 48vh;
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    border: 0.8rem solid white;
+    border-radius: 50%;
+}
+
+.recording{
+    height: 3rem;
+    width: 3rem;
+    left: 50%;
+    margin-left: 10px;
+    margin-top: 11px;
+    background-color: red;
+    border-radius: 50%;
+}
+.record-animation{
+    animation: scaleUp 1s ;
+    animation-iteration-count: infinite;
+}
+.timing{
+    color: red;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 17vh;
+    left: 5%;
+    display: none;
+    z-index: 6;
+}
+.grid1{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.grid2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.channel1btn,.channel2btn{
+    font-size: 4rem;
+    color: white;
+}
+.active{
+    color: red;
+}
+    
+    @keyframes scaleUp {
+        0%{
+            transform: scale(1);
+        }
+       50%{
+        transform: scale(1.08);
+       }
+        100%{
+            transform: scale(1);
+        }
+        
+    }

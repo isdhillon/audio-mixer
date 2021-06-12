@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    background-color: #6a6a6a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#recordings-button {
+    position: fixed;
+    height: 3rem;
+    z-index: 2;
+    width: 3rem;
+    bottom: 10vh;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    right: 5.3vw;
+    background-color: #222;
+  }
+  
+  .recordings-delete-button,
+  .recordings-download-button {
+    border: none;
+    height: 10%;
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+  .recordings-aud-container audio {
+    height: 80%;
+    display: block;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+  .recordings-aud-container {
+    width: 25rem;
+    background: white;
+    border-radius: 1rem;
+    height: 20rem;
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .recordings{
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  .recordings-back {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    height: 3rem;
+    display: flex;
+    width: 3rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+
+  .recordings-banner{
+      position: fixed;
+      top: 0%;
+      height: 5rem;
+      width: 100%;
+      background-color: #d91d1d;
+  }
+
+
+  .recordings-titlediv{
+      margin: 0 auto;
+      height: 100%;
+      width: 7rem;
+      display: flex;
+  }
+
+  
+
+  .recordings-delete-button {
+    background: #d91d1d;
+  }
+  
+  .recordings-download-button {
+    background: #291e1e;
+  }
